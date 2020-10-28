@@ -1,0 +1,63 @@
+  @media (prefers-reduced-motion: no-preference) {
+    .header-logo {
+      animation: logo-spin infinite 10s linear;
+  
+    }
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotateY(0deg)
+    }
+    to {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  
+  /******************** HEADER STYILING ***************/
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    z-index: 0;
+    width: 100%;
+    height: 10vh;
+    perspective: 600px;
+  
+    background-color: #444;
+    border-bottom: 1px solid #E5E5E5;
+  }
+
+  .header-logo {
+    height: 8vh;
+    pointer-events: none;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    position: relative;
+  }
+
+  .header-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(#efefef30, #efefef00);
+  }
+  
+  .header-overlay p {
+    font-size: 3em;
+    transition: all .3s ease;
+  }
+  .header-overlay p:hover {
+    font-size: 4em;
+  }
+  
+  /***************** END OF HEADER STYILING************/
