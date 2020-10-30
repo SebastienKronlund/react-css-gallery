@@ -20,7 +20,7 @@ const Button = ({text, setIndex, stateIndex}) => {
     }
 
     return (
-    <button id="" className="button" onClick={changeImages}>{text}</button>
+    <button className="button-alexHouse" onClick={changeImages}>{text}</button>
     );
 }
 

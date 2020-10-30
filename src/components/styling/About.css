@@ -1,0 +1,49 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: black;
+}
+
+.about-h1 {
+  font-size: 2.4em;
+  margin-bottom: 3em;
+  color: #efefef70;
+}
+
+.about-div {
+  text-align: center;
+  width: 70%;
+  max-width: 350px;
+  margin: 0em auto;
+  color: #efefef;
+}
+
+.about-h4 {
+  font-size: 1.4em;
+}
+
+.about-p {
+  font-weight: 100;
+  line-height: 120%;
+  letter-spacing: .05em;
+  margin-bottom: 1.4em;
+  padding-bottom: .8em;
+  border-bottom: 1px solid #efefef70;
+}
+
+@media only screen and (min-width: 760px) {
+
+  .about-h1{
+    font-size: 3.4em;
+    margin-bottom: 2em;
+  }
+  .about-h4 {
+    font-size: 2.4em;
+  }
+  .about-p {
+    font-size: 1.2em;
+  }
+}

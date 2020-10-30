@@ -1,5 +1,7 @@
 import { render } from '@testing-library/react';
 import App from './App';
+import Main from './Main';
+import Splash from './Splash';
 
 test('Checks for header and logo in header', () => {
   render(<App />);
@@ -10,13 +12,13 @@ test('Checks for header and logo in header', () => {
 });
 
 test('Check for main-body', () => {
-  render(<App/>);
+  render(<Main/>);
   const main = document.querySelector("main");
 
   expect(main).toBeInTheDocument();
 });
 test('Check for a Search Bar in main', () => {
-  render(<App/>);
+  render(<Main />);
   const search = document
     .querySelector(".search-container")
     .querySelector("#search-form")
@@ -34,4 +36,13 @@ test('Check for Footer', () => {
   
 
   expect(footer).toBeInTheDocument();
+});
+
+test('Check for SearchBar in Splash', () => {
+  render(<Splash />);
+  const search = document
+    .getElementById('search-form')
+    .querySelector('input');
+
+  expect(search).toBeInTheDocument();
 });
